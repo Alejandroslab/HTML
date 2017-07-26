@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head><title>esercitazione form</title>
+<meta charset="utf-8">
+<style type="text/css">
+form {background-color: #FFFAF0;}
+p {color: #B22222; }
+fieldset {width: 50%; }
+</style>
+</head>
+<!-- javascript -->
+<script type ="text/JavaScript">
+document.writeln("<h2>Welcome!<h2>");
+
+
+
+</script>
+
+<body>
+<form class="modulo">
+<fieldset>
+<p>
+<label for="Professione">Specificare la professione attuale (opzionale) </label>
+</p>
+<p>
+<select name="professione" size="4"> 
+<option>Studente</option>
+<option>Impiegato</option>
+<option>Libero professionista</option>
+<option>Commerciante</option>
+<option>Casalinga</option>
+<option>Altro</option>
+</select>
+</p>
+<p>
+<label for="altro">Altro</label>
+</p>
+<p>
+<textarea name="altro" id="altro" cols=20 rows=4>
+</textarea>
+</p>
+<p>
+<label for="Nome">Nome</label>
+<input type="text" id="Nome" name="Nome" size="20" maxlength="40" accesskey="n"/>
+<label for="Cognome">Cognome</label>
+<input type="text" id="Cognome" name="Cognome" size="20" maxlength="40"/>
+</p>
+<p>
+<label for="email">Indirizzo email</label>
+<input type="text" id="email" name="email" size="20" maxlength="40" accesskey="e"/>
+</p>
+</fieldset>
+<fieldset> 
+<p><legend>Genere </legend><br/> 
+<input type="radio" name="genere" value="maschio"/> Maschio <br/> 
+<input type="radio" name="genere" value="femmina"/> Femmina 
+</p> 
+</fieldset>
+<fieldset> 
+<p><legend>Stato civile</legend> <br/>
+<input type="radio" name="stato" value="celibe"/> Celibe <br/> 
+<input type="radio" name="stato" value="nubile"/> Nubile <br/>
+<input type="radio" name="stato" value="sposato/a"/> Sposato/a <br/>
+<input type="radio" name="stato" value="vedovo/a"/> Vedovo/a <br/>
+</p> 
+</fieldset>
+<fieldset>
+<p>E' interessato/a a frequentare uno dei nostri corsi?</p> 
+<fieldset> 
+<p>
+<input type="radio" name="risposta" value="si"> 
+<label for="si">si</label>
+<br/>
+<input type="radio" name="risposta" value="no"> 
+<label for="no">no</label>
+</p>
+</fieldset>
+<p>
+<label for="corso">Se si, quale?</label>
+</p>
+<select name="corso" size="4" multiple="multiple"> 
+<option>Corso di decorazione in PDZ - principianti</option>
+<option>Corso di decorazione in PDZ - avanzato</option>
+<option>Corso di pasticceria - livello base</option>
+<option>Corso di pasticceria - livello avanzato</option>
+<option>Corso per attestato HACCP</option>
+</select>
+</p>
+<p>
+<input type="submit"/>
+</p>
+</form>
+</body>
+</html>
