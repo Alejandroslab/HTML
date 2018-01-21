@@ -1,2 +1,2 @@
 # HTML
-Developing websites
+Simple websites. 
